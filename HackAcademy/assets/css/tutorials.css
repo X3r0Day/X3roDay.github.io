@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-bottom: 50px; /* To ensure footer doesn't overlap content */
+  }
+  
+  header {
+    background: linear-gradient(135deg, #1e90ff, #00bcd4);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    color: #1e90ff;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  main h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #1e90ff;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section p {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  article h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem 0;
+  }
+  
+  pre code {
+    color: #d63384;
+  }
+  
+  /* Buttons (if added in the future) */
+  button {
+    background: #1e90ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #00bcd4;
+    transform: scale(1.05);
+  }
+  
+  /* Resources Section */
+  .resources ul {
+    list-style-type: none;
+  }
+  
+  .resources ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resources ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .resources ul li a:hover {
+    color: #d63384;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+/* Style the footer containing the source credit */
+.source-credits {
+    text-align: right; /* Align the credits to the right */
+    font-size: 0.8rem; /* Smaller font size for credits */
+    color: #555; /* Lighter color for the credit text */
+    margin-top: 10px; /* Space between the paragraph and the footer */
+}
+
+/* Optional: Style the link to make it look good */
+.source-credits a {
+    color: #e6ce35; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.source-credits a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
